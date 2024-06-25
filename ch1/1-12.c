@@ -5,10 +5,7 @@
 
 /* Print the input one word per line */
 int main(){
-  int c, nl, nw, nc, state;
-
-  state = OUT;
-  nl = nw = nc = 0;
+  int c, state = OUT;
 
   while ((c = getchar()) != EOF) {
     if (c == ' ' || c == '\n' || c == '\t') {
